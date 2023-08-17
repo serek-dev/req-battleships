@@ -1,0 +1,12 @@
+version: '3.6'
+
+services:
+
+  lib:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      SHOW: 0 # change to 1 to reveal ships on the grid
+    volumes:
+      - ./:/app/
